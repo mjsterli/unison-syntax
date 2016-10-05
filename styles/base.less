@@ -63,14 +63,15 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .comment {
-  color: @light-gray;
+  color: @unison-color-gray-4;
+  font-style: italic;
 }
 
 .keyword {
-  color: @purple;
+  color: @unison-color-accent-orange;
 
   &.control {
-    color: @purple;
+    color: @unison-color-accent-orange;
   }
 
   &.operator {
@@ -87,11 +88,11 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .storage {
-  color: @purple;
+  color: @unison-color-accent-orange;
 }
 
 .constant {
-  color: @orange;
+  color: @unison-color-accent-green-yellow;
 
   &.character.escape {
     color: @cyan;
@@ -111,7 +112,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .variable {
-  color: @red;
+  color: @unison-color-off-white;
 
   &.interpolation {
     color: darken(@red, 10%);
@@ -128,7 +129,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .string {
-  color: @unison-color-accent-orange;
+  color: @unison-color-accent-green;
 
 
   &.regexp {
@@ -147,7 +148,8 @@ atom-text-editor .search-results .marker.current-result .region,
 .punctuation {
   &.definition {
     &.comment {
-      color: @light-gray;
+      color: @unison-color-gray-4;
+      font-style: italic;
     }
 
     &.string,
@@ -174,14 +176,14 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.section.embedded {
-    color: darken(@red, 10%);
+    color: @unison-color-accent-light-red;
   }
 
 }
 
 .support {
   &.class {
-    color: @light-orange;
+    color: @unison-color-accent-blue;
   }
 
   &.function  {
@@ -195,18 +197,17 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .entity {
   &.name.function {
-    color: @blue;
+    color: @unison-color-accent-orange;
   }
   &.name.type {
-    color: @light-orange;
-    text-decoration: underline;
+    color: @unison-color-accent-blue;
   }
 
   &.other.inherited-class {
-    color: @green;
+    color: @unison-color-accent-blue;
   }
   &.name.class, &.name.type.class {
-    color: @light-orange;
+    color: @unison-color-accent-blue;
   }
 
   &.name.section {
@@ -221,7 +222,7 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @unison-color-gray-1;
 
     &.id {
-      color: @unison-color-accent-green-yellow;
+      color: @unison-color-accent-red;
     }
   }
 }
