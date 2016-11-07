@@ -13,7 +13,7 @@ atom-text-editor, :host {
   }
 
   .invisible-character {
-    color: @syntax-invisible-character-color;
+    color: @unison-color-gray-4;
   }
 
   .gutter {
@@ -43,7 +43,9 @@ atom-text-editor, :host {
   }
 
   .cursor {
-    color: @syntax-cursor-color;
+    color: @unison-color-accent-blue;
+    position: absolute;
+    border-left: solid 2px;
   }
 
   .selection .region {
@@ -68,10 +70,10 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .keyword {
-  color: @unison-color-accent-orange;
+  color: @unison-color-hot-orange;
 
   &.control {
-    color: @unison-color-accent-orange;
+    color: @unison-color-hot-orange;
   }
 
   &.operator {
@@ -88,18 +90,18 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .storage {
-  color: @unison-color-accent-orange;
+  color: @unison-color-hot-orange;
 }
 
 .constant {
-  color: @unison-color-accent-green-yellow;
+  color: @unison-color-accent-teal;
 
   &.character.escape {
     color: @cyan;
   }
 
   &.numeric {
-    color: @orange;
+    color: @unison-color-hot-pink;
   }
 
   &.other.color {
@@ -129,7 +131,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .string {
-  color: @unison-color-accent-green;
+  color: @unison-color-medium-neon-green;
 
 
   &.regexp {
@@ -187,7 +189,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.function  {
-    color: @cyan;
+    color: @unison-color-accent-blue;
 
     &.any-method {
       color: @blue;
@@ -197,17 +199,17 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .entity {
   &.name.function {
-    color: @unison-color-accent-orange;
+    color: @unison-color-blue;
   }
   &.name.type {
-    color: @unison-color-accent-blue;
+    color: @unison-color-blue;
   }
 
   &.other.inherited-class {
-    color: @unison-color-accent-blue;
+    color: @unison-color-blue;
   }
   &.name.class, &.name.type.class {
-    color: @unison-color-accent-blue;
+    color: @unison-color-blue;
   }
 
   &.name.section {
@@ -215,14 +217,14 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.name.tag {
-    color: @unison-color-accent-blue;
+    color: @unison-color-accent-orange;
   }
 
   &.other.attribute-name {
-    color: @unison-color-gray-1;
+    color: @unison-color-off-white;
 
     &.id {
-      color: @unison-color-accent-red;
+      color: @unison-color-accent-blue;
     }
   }
 }
