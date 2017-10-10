@@ -13,7 +13,7 @@ atom-text-editor, atom-text-editor {
   }
 
   .syntax--invisible-character {
-    color: @unison-color-gray-4;
+    color: @unison-color-gray-5;
   }
 
   .syntax--gutter {
@@ -39,7 +39,7 @@ atom-text-editor, atom-text-editor {
   }
 
   .syntax--invisible {
-    color: @syntax-text-color;
+    color: @unison-color-gray-5;
   }
 
   .syntax--cursor {
@@ -51,6 +51,7 @@ atom-text-editor, atom-text-editor {
   .syntax--selection .syntax--region {
     background-color: @syntax-selection-color;
   }
+
 }
 
 atom-text-editor .syntax--search-results .syntax--marker .syntax--region,
@@ -194,6 +195,9 @@ atom-text-editor .syntax--search-results .syntax--marker.syntax--current-result 
     color: @unison-color-accent-light-red;
   }
 
+  &.syntax--separator.syntax--namespace.syntax--xml{
+    color: @unison-color-gray-2;
+  }
 }
 
 .syntax--support {
@@ -236,6 +240,9 @@ atom-text-editor .syntax--search-results .syntax--marker.syntax--current-result 
 
   &.syntax--name.syntax--tag {
     color: @unison-color-hot-red;
+    &.syntax--localname.syntax--xml, &.syntax--namespace.syntax--xml{
+      color: @unison-color-gray-2;
+    }
   }
 
   &.syntax--other.syntax--attribute-name {
